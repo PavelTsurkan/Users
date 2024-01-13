@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+{% block body %}
+<h2>User Edit</h2>
+<form method="post">
+    <label>login:<br>
+        <input type="text" name="login" value="{{ user.login }}">
+    </label><br>
+    <label>name:<br>
+        <input type="text" name="name" value="{{ user.name }}">
+    </label><br>
+    <label>surname:<br>
+        <input type="text" name="surname" value="{{ user.surname }}">
+    </label><br>
+    <label>age:<br>
+        <input type="number" name="age" value="{{ user.age }}">
+    </label><br><br>
+    <input type="submit">
+</form>
+{% endblock %}

@@ -1,0 +1,46 @@
+body {
+    background-color: bisque;
+    font-size: 24px;
+}
+
+main, header, footer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    table-layout: auto;
+}
+
+table, th, td {
+    border: 2px solid blue;
+    border-collapse: collapse;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+table .edit_col {
+    width: 50px
+}
+
+h1 {
+    text-align: center;
+}
+
+.nav-link {
+    display: block;
+    margin: 20px 0;
+    text-decoration: none;
+    color: darkblue
+}
+
+.nav-link:visited {
+    text-decoration: none;
+    color: darkslateblue;
+}
+
+.errors {
+    border: 2px solid red;
+    color: red
+}
