@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+{% block body %}
+<a class="nav-link" href="/user/add/">+ Add user</a>
+<table>
+    <tr>
+        <th>Login</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Age</th>
+        <th class="edit_col"></th>
+        <th class="edit_col"></th>
+    </tr>
+    {% for user in users %}
+    <tr>
+        <td>{{ user.login }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.surname }}</td>
+        <td>{{ user.age }}</td>
+        <td><a class="" href="/user/edit/{{ user.id }}">Edit</a></td>
+        <td><a class="" href="/user/delete/{{ user.id }}" onclick="return confirm('Delete user {{ user.name }}')">Delete</a></td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
